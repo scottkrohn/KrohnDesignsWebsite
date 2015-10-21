@@ -1,0 +1,281 @@
+/*
+	Colors
+	======
+	
+	Header/Active Page Link/Footer :	#474747
+	Main Panel/Side Panel/Tweets Text:	#575857
+	Background/Tweet Box:				#d9d9d9
+	Slogan:								#cccccc
+	Main Text/Nav Bar/Footer Border:	#dedede 
+	Link Color:							#cecece
+*/
+
+/**************************************************
+				  General Styles
+**************************************************/
+
+html {
+	background: #d9d9d9;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility:
+}
+
+body {
+	font-family: 'Exo', sans-serif;
+	font-size: 14px;
+	overflow-y: scroll;
+}
+
+.container {
+	max-width: 1100px;
+	padding: 0 0;
+	margin: 0 auto;
+}
+
+
+/**************************************************
+						Header
+***************************************************/
+
+#logo {
+	padding-left: 10px;
+	padding-top: 4px;
+	float: left;
+ }
+
+#social {
+	float: right;
+	padding-top: 4px;
+ }
+ 
+#top_header {
+	position: relative;
+	z-index: 2; /* Allows the top_header to be above the bottom_header for transparency. */
+	overflow: auto;
+	background-color: rgba(91, 91, 91, .5);
+	-webkit-box-shadow: 0px 1px 3px 1px;
+   	   -moz-box-shadow: 0px 1px 3px 1px;
+			box-shadow: 0px 1px 3px 1px;
+}
+
+#header_chalkboard {
+	position: relative;
+	z-index: 1;
+}
+
+#slogan {
+	color: #cccccc;
+	position:relative;
+	float: right;
+	margin-top: -30px;
+}
+
+#bottom_header {
+	position: relative;
+	margin-top: -61px;
+	overflow: auto;
+	background: #474747;
+	-webkit-box-shadow: 0px 1px 3px 0px;
+   	   -moz-box-shadow: 0px 1px 3px 0px;
+			box-shadow: 0px 1px 3px 0px;
+
+}
+
+/***************************************************
+					Main Navigation	
+***************************************************/
+
+#nav {
+	overflow: auto;
+	height: 40px;
+	background: #dedede;
+	-webkit-box-shadow: 0px 1px 3px 1px;
+   	   -moz-box-shadow: 0px 1px 3px 1px;
+			box-shadow: 0px 1px 3px 1px;
+}
+
+#nav ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#nav li {
+	float: left;
+	width: 220px;
+	line-height: 40px;
+	text-align: center;
+	background: #dedede;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+#nav a {
+	text-decoration: none;
+	background: #dedede;
+	display: block;
+	color: #474747;
+}
+
+#nav a:hover {
+	background: #474747;
+	color: #dedede;
+}
+
+/***************************************************
+					Main Panel	
+***************************************************/
+
+#content {
+	overflow: auto;
+	position: relative;
+}
+
+#main_panel {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	background: #575857;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 60px;
+	margin-bottom: 10px;
+	padding: 20px;
+	width: 750px;
+	font-size: 17px;
+	line-height: 25px;
+	-webkit-box-shadow: 2px 2px 5px 0px;
+	   -moz-box-shadow: 2px 2px 5px 0px;
+			box-shadow: 2px 2px 5px 0px;
+
+}
+
+#main_panel p{
+	font-weight: 300;
+	color: #dedede;
+}
+
+h2 {
+	font-weight: 300;
+	color: #dedede;
+}
+
+#main_panel_divider {
+	color: #939393;	/* For IE7+ */
+	border-color: #939393; /* For Chrome and Safari */
+	background-color: #939393; /* For Firefox and Opera */
+}
+
+#tweets {
+	width: 100%;
+}
+
+/***************************************************
+					Side Panel	
+***************************************************/
+
+#side_panel {
+	width: 220px;
+	margin-top: 60px;
+	margin-right: 10px;
+	float: right;
+	background: #575857;
+	padding-right: 25px;
+	padding-left: 32px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 2px 2px 5px 0px;
+	   -moz-box-shadow: 2px 2px 5px 0px;
+			box-shadow: 2px 2px 5px 0px;
+}
+
+#chalk_link {
+	display: block;
+	background-image: url('../img/unclicked_chalkboard_photo.jpg') ;
+	background-repeat: repeat-x;
+	width: 213px;
+	height: 283px;
+	margin-bottom: 32px;
+}
+
+#chalk_link:hover {
+	background-image: url('../img/clicked_chalkboard_photo.jpg') ;
+}
+
+#rustic_link {
+	display: block;
+	background-image: url('../img/unclicked_rustic_photo.jpg');
+	background-repeat: repeat-x;
+	width: 215px;
+	height: 299px;
+}
+
+#rustic_link:hover {
+	background-image: url('../img/clicked_rustic_photo.jpg') ;
+}
+
+/***************************************************
+				Bottom Navigation	
+***************************************************/
+
+#footer_nav ul {
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer_nav li {
+	float: left;
+	padding-left: 50px;
+	position: relative;
+}
+
+#footer_nav a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #cecece;
+}
+
+#footer_nav a:hover {
+	color: #575857;
+}
+
+/***************************************************
+						Footer	
+***************************************************/
+
+#top_footer {
+	position: relative;
+	margin-top: 50px;
+	height: 50px;
+	background: #dedede;
+	-webkit-box-shadow: 0px -1px 3px 1px;
+	   -moz-box-shadow: 0px -1px 3px 1px;
+			box-shadow: 0px -1px 3px 1px;
+}
+
+#footer {
+	position: relative;
+	overflow: auto;
+	text-align: center;
+	background: #474747;
+	-webkit-box-shadow: 0px -1px 3px;
+	   -moz-box-shadow: 0px -1px 3px;
+			box-shadow: 0px -1px 3px;
+
+}
+
+#email_signup {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+#copyright {
+	display: block;
+	font-size: 18px;
+	color: #dedede;
+}
+

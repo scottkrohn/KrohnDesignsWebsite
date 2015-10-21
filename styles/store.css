@@ -1,0 +1,39 @@
+/*
+	Colors
+	======
+	
+	Header/Active Page Link/Footer :	#474747
+	Main Panel/Side Panel/Tweets Text:	#575857
+	Background/Tweet Box:				#d9d9d9
+	Slogan:								#cccccc
+	Main Text/Nav Bar/Footer Border:	#dedede 
+	Link Color:							#cecece
+*/
+
+#main_panel {
+	position: relative;
+	width: 1040px;
+}
+
+#main_panel p {
+	text-align: center;
+}
+
+#etsymini {
+	width: 945px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#etsymini p {
+	font-size: 22px;
+}
+
+#etsymini a {
+	color: #dedede;
+	font-weight: bold;
+}
+
+#etsymini a:hover {
+	color: #cccccc;
+}

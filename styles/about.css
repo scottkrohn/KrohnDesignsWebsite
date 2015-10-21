@@ -1,0 +1,45 @@
+/*
+	CSS file for "About" page.
+*/
+
+/*
+	Colors
+	======
+	
+	Header/Active Page Link/Footer :	#474747
+	Main Panel/Side Panel/Tweets Text:	#575857
+	Background/Tweet Box:				#d9d9d9
+	Slogan:								#cccccc
+	Main Text/Nav Bar/Footer Border:	#dedede 
+	Link Color:							#cecece
+*/
+
+#images {
+	float: right;
+	width: 205px;
+	padding-left: 20px;
+}
+
+.thumb {
+	width: 200px;
+	height 200px;
+}
+
+#main_panel {
+	position: relative;
+	width: 1040px;
+}
+
+#main_panel h2{
+	font-weight: 600;
+}
+
+#main_panel a{
+	text-decoration: none;
+	color: #cecece;
+}
+
+#main_panel a:hover{
+	color: #dedede;
+	text-decoration: underline;
+}
